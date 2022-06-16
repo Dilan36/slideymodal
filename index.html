@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div>
+          <button class="inicio" id="inicio">INICIAR</button>
+          <button class="registrarse" id="registrarse">REGISTRARSE</button> 
+          
+      </div>
+      <div>
+          <p id="demo"></p>
+      </div>
+  </nav>
+    
+    
+
+
+  </header>
+
+  <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 6</div>
+          <img id="Imagenes" src="img/Bugatti.jpg">
+          <div class="text">Bugatti</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 6</div>
+          <img src="img/LamborghiniV2.jpg">
+          <div class="text">Lamborghini</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="img/Renault 4.jpg">
+          <div class="text">Renault Volador</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img id="Imagenes" src="img/twingo.jpg">
+            <div class="text">El atrapa Bandidas</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img id="Imagenes" src="img/Batimovil.jpg">
+            <div class="text">Batimovil</div>
+          </div>
+          
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img id="Imagenes" src="img/Chiva.jpg">
+            <div class="text">Chiva</div>
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+
+        <div class="modalContainer1" id="modalContainer">
+          <div class="modal">
+              <h2>INICIO</h2>
+              <form action="#">
+                  <div>
+                      <label for="usuario">Usuario o Correo</label>
+                      <input type="text" id="usuario" required>
+                  </div>
+                  <div>
+                      <label for="contraseña">Contraseña</label>
+                      <input type="password" id="contraseña">
+                  </div>
+              </form>
+              <button class="btn" id="ingresar" onclick="modificar ()">Continuar</button>
+          </div>
+          
+      </div>
+
+      <div class="modalContainer2" id="modalContainer">
+        <div class="modal">
+            <h2>Registro</h2>
+            <form action="#">
+                <div>
+                    <label for="nombres">Nombres</label>
+                    <input type="text" id="nombres" placeholder="Ej: Dilan Sanchez" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Ej: cositaRica@gmail.com" required>
+                </div>
+                <div>
+                    <label for="nombres">Usuario</label>
+                    <input type="text" id="Usuario" placeholder="Ej: Dilan Sanchez" required>
+                </div>
+                <div>
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña">
+                </div>
+            </form>
+            <button class="btn" id="ingresar" onclick="modificar ()">Registrarse</button>
+        </div>
+    </div>
+
+ 
+        
+
+    <footer>
+        <h3>Datos de Contacto</h3>
+        <p>tunometecabrasaramanbiche69@misena.edu.co</p>
+        <p>3126666402</p>
+    </footer>
+        
+
+
+    <script src="js/functions.js"></script>
+  <script src="js/modal.js"></script>  
+</body>
+</html>
